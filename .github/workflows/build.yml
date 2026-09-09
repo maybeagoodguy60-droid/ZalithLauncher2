@@ -77,3 +77,35 @@ jobs:
         with:
           name: debug apk (${{ matrix.arch }})
           path: ZalithLauncher/build/outputs/apk/debug/*.apk
+
+      - name: Compress Debug APK (arm64)
+        if: inputs.variant == 'Debug' && matrix.arch == 'arm64'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          apk=$(ls ZalithLauncher/build/outputs/apk/debug/*.apk | head -1)
+          mkdir -p dist
+          echo "APK size: $(stat -c%s "$apk") bytes"
+          cp "$apk" "dist/Aether-Launcher-arm64-Debug.apk"
+          if command -v zip >/dev/null; then
+            zip -9 -j "dist/Aether-Launcher-arm64-Debug.zip" "$apk"
+          fi
+          if command -v 7z >/dev/null; then
+            7z a -tzip -mx=9 -mmt=on "dist/Aether-Launcher-arm64-Debug-max.zip" "$apk" >/dev/null
+          fi
+          if command -v xz >/dev/null; then
+            xz -9e -c "$apk" > "dist/Aether-Launcher-arm64-Debug.apk.xz"
+          fi
+          if command -v zstd >/dev/null; then
+            zstd --ultra -22 -q -f "dist/Aether-Launcher-arm64-Debug.apk" -o "dist/Aether-Launcher-arm64-Debug.apk.zst"
+          fi
+          ls -la dist
+
+      - name: Upload Compressed ZIP (arm64)
+        if: inputs.variant == 'Debug' && matrix.arch == 'arm64'
+        continue-on-error: true
+        uses: actions/upload-artifact@v7
+        with:
+          name: debug apk arm64 (compressed)
+          path: dist/
