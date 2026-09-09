@@ -1,6 +1,12 @@
-# Zalith Launcher 2
-![Downloads](https://img.shields.io/github/downloads/ZalithLauncher/ZalithLauncher2/total)
-[![Sponsor](https://img.shields.io/badge/sponsor-30363D?logo=GitHub-Sponsors)](https://afdian.com/a/MovTery)
+# Zalith Launcher 3
+
+> [!WARNING]
+> **Unofficial modified version** of [ZalithLauncher 2](https://github.com/ZalithLauncher/ZalithLauncher2).
+> Built and maintained by **Gray dev**.
+>
+> **Changes over stock 2.5.1:**
+> - **Offline-first:** offline accounts and third-party authentication are always allowed — no Microsoft account required (fix released by Gray dev).
+> - Rebranded to *Zalith Launcher 3*.
 
 [简体中文](README.md) | [繁體中文](README_ZH_TW.md)
 

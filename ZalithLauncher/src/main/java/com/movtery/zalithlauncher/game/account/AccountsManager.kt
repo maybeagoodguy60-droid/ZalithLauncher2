@@ -246,10 +246,12 @@ object AccountsManager {
         _isOffline.update { isOffline }
     }
 
-    private fun checkLimit(): Boolean {
-        val circumventLimit = File(PathManager.DIR_FILES_EXTERNAL, "circumventLimit")
-        return !circumventLimit.exists() && !isInGreaterChina() && !hasMicrosoftAccount()
-    }
+    /**
+     * Offline-first fix released by Gray dev (Zalith Launcher 3):
+     * offline accounts and third-party authentication are always allowed,
+     * no Microsoft account is required.
+     */
+    private fun checkLimit(): Boolean = false
 
     /**
      * 保存账号到数据库
