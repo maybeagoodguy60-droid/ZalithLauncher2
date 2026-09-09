@@ -1,4 +1,4 @@
-# Zalith Launcher 3
+# Aether Launcher
 
 > [!WARNING]
 > **Unofficial modified version** of [ZalithLauncher 2](https://github.com/ZalithLauncher/ZalithLauncher2).
@@ -6,7 +6,7 @@
 >
 > **Changes over stock 2.5.1:**
 > - **Offline-first:** offline accounts and third-party authentication are always allowed — no Microsoft account required (fix released by Gray dev).
-> - Rebranded to *Zalith Launcher 3*.
+> - Rebranded and renamed to *Aether Launcher (AL)* to comply with the upstream GPLv3 name-restriction terms.
 
 [简体中文](README.md) | [繁體中文](README_ZH_TW.md)
 

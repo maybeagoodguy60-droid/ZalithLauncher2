@@ -247,7 +247,7 @@ object AccountsManager {
     }
 
     /**
-     * Offline-first fix released by Gray dev (Zalith Launcher 3):
+     * Offline-first fix released by Gray dev (Aether Launcher):
      * offline accounts and third-party authentication are always allowed,
      * no Microsoft account is required.
      */

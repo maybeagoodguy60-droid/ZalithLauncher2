@@ -1,6 +1,12 @@
-# Zalith Launcher 2
-![Downloads](https://img.shields.io/github/downloads/ZalithLauncher/ZalithLauncher2/total)
-[![Sponsor](https://img.shields.io/badge/sponsor-30363D?logo=GitHub-Sponsors)](https://afdian.com/a/MovTery)
+# Aether Launcher
+
+> [!WARNING]
+> **非官方修改版**，基于 [ZalithLauncher 2](https://github.com/ZalithLauncher/ZalithLauncher2)。
+> 由 **Gray dev** 构建与维护。
+>
+> **相比原版 2.5.1 的改动：**
+> - **离线优先：** 离线账号与第三方验证账号完全开放，不再强制要求微软账号（由 Gray dev 发布的修复）。
+> - 重新命名为 *Aether Launcher (AL)*，以遵守上游 GPLv3 名称限制条款。
 
 [English](README_EN_US.md) | [繁體中文](README_ZH_TW.md)
 
