@@ -87,19 +87,8 @@ jobs:
           apk=$(ls ZalithLauncher/build/outputs/apk/debug/*.apk | head -1)
           mkdir -p dist
           echo "APK size: $(stat -c%s "$apk") bytes"
-          cp "$apk" "dist/Aether-Launcher-arm64-Debug.apk"
-          if command -v zip >/dev/null; then
-            zip -9 -j "dist/Aether-Launcher-arm64-Debug.zip" "$apk"
-          fi
-          if command -v 7z >/dev/null; then
-            7z a -tzip -mx=9 -mmt=on "dist/Aether-Launcher-arm64-Debug-max.zip" "$apk" >/dev/null
-          fi
-          if command -v xz >/dev/null; then
-            xz -9e -c "$apk" > "dist/Aether-Launcher-arm64-Debug.apk.xz"
-          fi
-          if command -v zstd >/dev/null; then
-            zstd --ultra -22 -q -f "dist/Aether-Launcher-arm64-Debug.apk" -o "dist/Aether-Launcher-arm64-Debug.apk.zst"
-          fi
+          zip -9 -j "dist/Aether-Launcher-arm64-Debug.zip" "$apk"
+          echo "ZIP size: $(stat -c%s dist/Aether-Launcher-arm64-Debug.zip) bytes"
           ls -la dist
 
       - name: Upload Compressed ZIP (arm64)
@@ -107,5 +96,5 @@ jobs:
         continue-on-error: true
         uses: actions/upload-artifact@v7
         with:
-          name: debug apk arm64 (compressed)
+          name: debug apk arm64 (zip)
           path: dist/
