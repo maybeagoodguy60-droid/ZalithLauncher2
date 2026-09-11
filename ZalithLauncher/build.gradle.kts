@@ -47,9 +47,10 @@ android {
 
     signingConfigs {
         create("releaseBuild") {
-            storeFile = file("zalith_launcher.jks")
+            storeFile = file("aether_launcher.p12")
+            storeType = "PKCS12"
             storePassword = getKeyFromLocal("STORE_PASSWORD", ".store_password.txt")
-            keyAlias = "movtery_zalith"
+            keyAlias = "graydev_aether"
             keyPassword = getKeyFromLocal("KEY_PASSWORD", ".key_password.txt")
         }
         create("debugBuild") {
