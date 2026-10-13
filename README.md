@@ -1,6 +1,12 @@
-# Zalith Launcher 2
-![Downloads](https://img.shields.io/github/downloads/ZalithLauncher/ZalithLauncher2/total)
-[![Sponsor](https://img.shields.io/badge/sponsor-30363D?logo=GitHub-Sponsors)](https://afdian.com/a/MovTery)
+# Aether Launcher
+
+> [!WARNING]
+> **非官方修改版**，基于 [ZalithLauncher 2](https://github.com/ZalithLauncher/ZalithLauncher2)。
+> 由 **Gray dev** 构建与维护。
+>
+> **基于上游 2.7 重构：完整的上游 2.7 功能 + Aether 差异化定制。**
+> - **离线账号原生支持：** 上游 2.7 已移除强制微软账号限制，本分支与其保持一致，无需任何修改。
+> - 重新命名为 *Aether Launcher (AL)*，以遵守上游 GPLv3 名称限制条款。
 
 [English](README_EN_US.md) | [繁體中文](README_ZH_TW.md)
 
@@ -8,16 +14,18 @@
 > [!IMPORTANT]
 > 该项目与 [ZalithLauncher](https://github.com/ZalithLauncher/ZalithLauncher) 属于两个完全不同的项目  
 
-**Zalith Launcher 2** 是一个全新设计、面向 **Android 设备** 的 [Minecraft: Java Edition](https://www.minecraft.net/) 启动器。项目使用 [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher/tree/v3_openjdk/app_pojavlauncher/src/main/jni) 作为启动核心，采用 **Jetpack Compose** 与 **Material Design 3** 构建现代化 UI 体验。  
-我们目前正在搭建自己的官方网站 [zalithlauncher.cn](https://zalithlauncher.cn)  
-此外，我们已注意到有第三方使用“Zalith Launcher”名称搭建了一个看似官方的网站。请注意：**该网站并非我们创建**，其通过冒用名义并植入广告牟利。我们对此类行为**不参与、不认可、不信任**。  
-请务必提高警惕，**谨防个人隐私信息泄露**！
+**ZalithLauncher 2**（本分支基于的上游项目）是一个全新设计、面向 **Android 设备** 的 [Minecraft: Java Edition](https://www.minecraft.net/) 启动器。项目使用 [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher/tree/v3_openjdk/app_pojavlauncher/src/main/jni) 作为启动核心，采用 **Jetpack Compose** 与 **Material Design 3** 构建现代化 UI 体验。  
+上游声明（保留备查）：上游正在搭建他们自己的官方网站 [zalithlauncher.cn](https://zalithlauncher.cn)。  
+此外，上游已注意到有第三方使用“Zalith Launcher”名称搭建了一个看似官方的网站。据上游说明：**该网站并非由他们创建**，其通过冒用名义并植入广告牟利。上游对此类行为**不参与、不认可、不信任**。  
+请务必提高警惕，**谨防个人隐私信息泄露**！  
+
+[Discord 服务器停止运营公告](.github/notice/DiscordStatus_ZH_CN.md)  
 
 
 ## 🌐 语言与翻译支持
 
-我们正在使用 Weblate 平台翻译 Zalith Launcher 2，欢迎您前往我们的 [Weblate 项目](https://hosted.weblate.org/projects/zalithlauncher2) 参与翻译！  
-感谢每一位语言贡献者的支持，让 Zalith Launcher 2 更加多语、更加全球化！
+上游正在使用 Weblate 平台翻译 ZalithLauncher 2，欢迎您前往他们的 [Weblate 项目](https://hosted.weblate.org/projects/zalithlauncher2) 参与翻译！  
+感谢每一位语言贡献者的支持，让 ZalithLauncher 2 更加多语、更加全球化！（翻译贡献归上游所有；本分支目前暂无其他贡献者。）
 
 
 
@@ -37,7 +45,7 @@
 ### 构建步骤
 
 ```bash
-git clone git@github.com:ZalithLauncher/ZalithLauncher2.git
+git clone -b graydev/zl3-offline https://github.com/maybeagoodguy60-droid/ZalithLauncher2.git
 # 使用 Android Studio 打开项目并进行构建
 ```
 

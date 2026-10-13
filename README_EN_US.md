@@ -1,6 +1,12 @@
-# Zalith Launcher 2
-![Downloads](https://img.shields.io/github/downloads/ZalithLauncher/ZalithLauncher2/total)
-[![Sponsor](https://img.shields.io/badge/sponsor-30363D?logo=GitHub-Sponsors)](https://afdian.com/a/MovTery)
+# Aether Launcher
+
+> [!WARNING]
+> **Unofficial modified version** of [ZalithLauncher 2](https://github.com/ZalithLauncher/ZalithLauncher2).
+> Built and maintained by **Gray dev**.
+>
+> **Rebased on the stock 2.7 line:** all upstream 2.7 features, plus Aether-specific tweaks.
+> - **Native offline accounts:** upstream 2.7 already removed the mandatory Microsoft-account restriction; this fork stays in line with upstream.
+> - Rebranded and renamed to *Aether Launcher (AL)* to comply with the upstream GPLv3 name-restriction terms.
 
 [简体中文](README.md) | [繁體中文](README_ZH_TW.md)
 
@@ -8,15 +14,17 @@
 > [!IMPORTANT]
 > This project is **completely separate** from [ZalithLauncher](https://github.com/ZalithLauncher/ZalithLauncher).  
 
-**Zalith Launcher 2** is a newly designed launcher for **Android devices** tailored for [Minecraft: Java Edition](https://www.minecraft.net/). The project uses [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher/tree/v3_openjdk/app_pojavlauncher/src/main/jni) as its core launching engine and features a modern UI built with **Jetpack Compose** and **Material Design 3**.  
-We are currently building our official website [zalithlauncher.cn](https://zalithlauncher.cn)  
-Additionally, we are aware that a third-party website has been set up using the name “Zalith Launcher”, appearing to be official. Please note: **this site was not created by us**. It exploits the name to display ads for profit. We **do not participate in, endorse, or trust** such content.  
-Please stay vigilant and **protect your personal privacy**!
+**ZalithLauncher 2** (the upstream project this fork is based on) is a newly designed launcher for **Android devices** tailored for [Minecraft: Java Edition](https://www.minecraft.net/). The project uses [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher/tree/v3_openjdk/app_pojavlauncher/src/main/jni) as its core launching engine and features a modern UI built with **Jetpack Compose** and **Material Design 3**.  
+Upstream notices (kept for reference): upstream is building their official website [zalithlauncher.cn](https://zalithlauncher.cn).  
+Additionally, upstream is aware that a third-party website has been set up using the name “Zalith Launcher”, appearing to be official. According to upstream: **this site was not created by them**. It exploits the name to display ads for profit. Upstream **does not participate in, endorse, or trust** such content.  
+Please stay vigilant and **protect your personal privacy**!  
+
+[Discord Server Shutdown Announcement](/.github/notice/DiscordStatus.md)  
 
 ## 🌐 Language and Translation Support
 
-We are using the Weblate platform to translate Zalith Launcher 2. You're welcome to join our [Weblate project](https://hosted.weblate.org/projects/zalithlauncher2) and contribute to the translations!  
-Thank you to every language contributor for helping make Zalith Launcher 2 more multilingual and global!
+Upstream uses the Weblate platform to translate ZalithLauncher 2. You're welcome to join their [Weblate project](https://hosted.weblate.org/projects/zalithlauncher2) and contribute to the translations!  
+Thank you to every language contributor for helping make ZalithLauncher 2 more multilingual and global! (Translation contributions go to upstream; this fork has no additional contributors yet.)
 
 ## 📦 Build Instructions (For Developers)
 
@@ -33,7 +41,7 @@ Thank you to every language contributor for helping make Zalith Launcher 2 more 
 ### Build Steps
 
 ```bash
-git clone git@github.com:ZalithLauncher/ZalithLauncher2.git
+git clone -b graydev/zl3-offline https://github.com/maybeagoodguy60-droid/ZalithLauncher2.git
 # Open the project in Android Studio and build
 ```
 
